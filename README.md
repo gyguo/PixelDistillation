@@ -17,7 +17,7 @@ Pixel Distillation is a cost flexible distillation framework, adept at accommoda
 - Code for teacher-student (TS), one-stage pixel distillation
 - Code for previous methods, including KD AT DKD ICKD SP
 
-**Tode**
+**Todo** 
 - Two-stage pixel distillation (TAS) Classification.
 - Two-stage pixel distillation (TAS) Object Detection.
 ---
