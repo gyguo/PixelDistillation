@@ -1,0 +1,31 @@
+BASIC:
+  GPU_ID: [0]
+  NUM_WORKERS: 10
+  BACKUP_CODES: True
+  BACKUP_LIST: ['lib', 'tools_base', 'configs']
+
+MODEL:
+  TYPE: '5runs'
+  ARCH: 'resnet18'
+  PRETRAIN: True
+
+DATA:
+  DATASET: cub
+  DATADIR: data/cub
+  NUM_CLASSES: 200
+  RESIZE_SIZE: 128
+  CROP_SIZE: 112
+
+TRAIN:
+  BATCH_SIZE: 64
+
+TEST:
+  BATCH_SIZE: 64
+
+SOLVER:
+  START_LR: 0.01
+  LR_STEPS: [ 30, 60, 90 ]
+  NUM_EPOCHS: 120
+  LR_DECAY_FACTOR: 0.1
+  MUMENTUM: 0.9
+  WEIGHT_DECAY: 0.0005

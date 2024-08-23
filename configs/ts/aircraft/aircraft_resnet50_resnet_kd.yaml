@@ -1,0 +1,57 @@
+BASIC:
+  GPU_ID: [0]
+  NUM_WORKERS: 10
+  BACKUP_CODES: True
+  BACKUP_LIST: ['lib', 'tools_1_ts', 'configs']
+
+
+MODEL:
+  TYPE: '5runs'
+  KDTYPE: 'kd' # 'at' 'dkd' 'ickd' 'sp'
+  ARCH_T: 'resnet50'
+  MODELDICT_T: 'ckpt/aircraft/1runs_resnet50_224_seed0_0.01/ckpt/model_best.pth'
+  ARCH_S: 'resnet18'
+  PRETRAIN_S: True
+
+KD:
+  TEMP: 4
+  ALPHA: 0.9
+
+ICKD:
+  BETA: 2.5
+
+AT:
+  BETA: 1000.0
+
+
+SP:
+  BETA: 3000.0
+
+DKD:
+  ALPHA: 1.0
+  BETA: 2.0
+  TEMP: 4
+  WARMUP: 20
+
+DATA:
+  DATASET: aircraft
+  DATADIR: data/aircraft
+  NUM_CLASSES: 100
+  RESIZE_SIZE: 256
+  CROP_SIZE: 224
+  LESSEN_RATIO: 4.0
+  LESSEN_TYPE: 2
+
+TRAIN:
+  BATCH_SIZE: 64
+
+TEST:
+  BATCH_SIZE: 64
+
+SOLVER:
+  START_LR: 0.01
+  LR_STEPS: [ 30, 60, 90 ]
+  NUM_EPOCHS: 120
+  LR_DECAY_FACTOR: 0.1
+  MUMENTUM: 0.9
+  WEIGHT_DECAY: 0.0005
