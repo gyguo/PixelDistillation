@@ -52,7 +52,7 @@ All available models can be found in `lib/models/model_builder.py`
 ### 2.2. One-stage Pixel Distillation (Teacher-Student)
 
 
-<!-- ![arch image](./figures/isrd.png){:height="50px" width="100px"} -->
+![arch image](./figures/isrd.png){:height="50px" width="100px"}
 
 #### Previous KD method
 
