@@ -4,7 +4,7 @@
 ## 1. INTRODUCTION
 Pixel Distillation is a cost flexible distillation framework, adept at accommodating diverse image sizes and heterogeneous network architectures, thereby enabling adaptive and efficient cost reduction across varied settings.
 
-<!-- ![arch image](./figures/introduction.png) -->
+![arch image](./figures/introduction.png)
 ### News and Updates
 **2024.07.01**
 
