@@ -6,14 +6,7 @@ Pixel Distillation is a cost flexible distillation framework, adept at accommoda
 
 ![arch image](./figures/introduction.png)
 ### News and Updates
-**2024.07.01**
-
-- Papaer has been accepted by TPAMI.
-
-**2024.08.10**
 - Code for CUB and Aircraft is released.
-
-**2024.08.23**
 - Code for teacher-student (TS), one-stage pixel distillation
 - Code for previous methods, including KD AT DKD ICKD SP
 
