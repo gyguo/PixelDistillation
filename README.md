@@ -5,14 +5,7 @@
 Pixel Distillation is a cost flexible distillation framework, adept at accommodating diverse image sizes and heterogeneous network architectures, thereby enabling adaptive and efficient cost reduction across varied settings.
 
 ![arch image](./figures/introduction.png)
-### News and Updates
-- Code for CUB and Aircraft is released.
-- Code for teacher-student (TS), one-stage pixel distillation
-- Code for previous methods, including KD AT DKD ICKD SP
 
-**Todo** 
-- Two-stage pixel distillation (TAS) Classification.
-- Two-stage pixel distillation (TAS) Object Detection.
 ---
 
 ## 2. Training
