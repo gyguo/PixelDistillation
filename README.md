@@ -6,6 +6,10 @@ Pixel Distillation is a cost flexible distillation framework, adept at accommoda
 
 ![arch image](./figures/introduction.png)
 
+
+### News
+The pixel distillation paradigm is also applied into **Whole Slide Images Glomerulus Detection** for reducing scanner equipment cost. Paper **[MHKD: Multi-step Hybrid Knowledge Distillation for Low-resolution Whole Slide Images Glomerulus Detection](https://openreview.net/forum?id=8gQRHlppLj)** is accepted by IEEE EMBS BHI 2024 Conference.
+
 ---
 
 ## 2. Training
@@ -67,5 +71,16 @@ python tools_1_ts/train_isrd_5runs.py --config_file configs/ts/cub/cub_resnet50_
   number={},
   pages={1-15},
   doi={10.1109/TPAMI.2024.3421277}}
+```
+```
+@inproceedings{
+zhang2024mhkd,
+title={{MHKD}: Multi-step Hybrid Knowledge Distillation for Low-resolution Whole Slide Images Glomerulus Detection},
+author={Xiangsen Zhang and Longfei Han and Chenchu Xu and Zhaohui Zheng and Jin Ding and Xianghui Fu and Dingwen Zhang and Junwei Han},
+booktitle={IEEE-EMBS International Conference on Biomedical and Health Informatics},
+year={2024},
+}
 
 ```
+
+
