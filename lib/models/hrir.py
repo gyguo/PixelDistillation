@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+import math
 
 
 class SR1x1(nn.Module):
@@ -10,10 +11,10 @@ class SR1x1(nn.Module):
 
         self.image_size = cfg.DATA.CROP_SIZE
         self.in_size = feat_size[2]
-        if self.image_size % self.in_size == 0:
-            self.scale_factor = int(self.image_size / self.in_size)
-        else:
-            self.scale_factor = int(self.image_size / self.in_size) +1
+        # The paper defines s as the ratio between the target image size and
+        # the feature map size. PixelShuffle requires an integer scale factor,
+        # so use the smallest integer not less than it and crop if necessary.
+        self.scale_factor = math.ceil(self.image_size / self.in_size)
 
         self.outplanes = self.scale_factor ** 2 * 3
         self.inplanes = feat_size[1]
